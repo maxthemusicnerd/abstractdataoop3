@@ -43,7 +43,7 @@ public interface DictionaryADT<K,V>
      * @return the value associated with the removed key
      * @throws KeyNotFoundException if the key does not exist in the dictionary
      */
-	V removePair(K k);
+	V removePair(K k) throws KeyNotFoundException;
 	
 	/**
      * Looks up and retrieves the value associated with a given key.
@@ -56,7 +56,7 @@ public interface DictionaryADT<K,V>
      * @return the value associated with the key
      * @throws KeyNotFoundException if the key does not exist in the dictionary
      */
-	V getValueByKey(K k);
+	V getValueByKey(K k) throws KeyNotFoundException;
 	
 	/**
      * Updates the value of an existing key in the dictionary.
